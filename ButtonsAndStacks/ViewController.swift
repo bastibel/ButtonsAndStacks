@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         print("You clicked tag #: \(sender.tag)")
         
         if sender.tag >= 0 && sender.tag <= 6 {
-            colorLabel.text = "You clicked \(sender.currentTitle)"
+            colorLabel.text = "You clicked \(sender.currentTitle!)"
             colorLabel.textColor = colors[sender.tag]
         } else {
             colorLabel.text = ""
